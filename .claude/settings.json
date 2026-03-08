@@ -2,6 +2,8 @@
   "enabledPlugins": {
     "context7@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
-    "playwright@claude-plugins-official": true
+    "playwright@claude-plugins-official": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "superpowers@claude-plugins-official": true
   }
 }
