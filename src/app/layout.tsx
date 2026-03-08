@@ -1,14 +1,12 @@
 import type {Metadata} from 'next'
-import {Geist} from 'next/font/google'
+import {Roboto} from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import {config} from '@/config'
 import {DESCRIPTION, KEYWORDS} from '@/constants'
 import './globals.css'
+import {cn} from '@/lib/utils'
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin']
-})
+const roboto = Roboto({subsets: ['latin'], variable: '--font-sans'})
 
 const {title, url, author} = config
 
@@ -80,8 +78,10 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang={'en'}>
-			<body className={`${geistSans.variable} antialiased`}>
+		<html
+			lang={'en'}
+			className={cn('font-sans', 'dark', roboto.variable)}>
+			<body className={'antialiased'}>
 				<NextTopLoader color={'#2245c4b'} />
 				{children}
 			</body>

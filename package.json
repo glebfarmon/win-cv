@@ -6,17 +6,20 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "eslint",
-		"lint:fix": "next lint --fix",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
 		"prepare": "node .husky/install.mjs"
 	},
 	"dependencies": {
+		"@base-ui/react": "^1.2.0",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
+		"lucide-react": "^0.577.0",
 		"next": "16.1.6",
 		"nextjs-toploader": "^3.9.17",
 		"react": "19.2.3",
 		"react-dom": "19.2.3",
+		"shadcn": "^4.0.2",
 		"sharp": "^0.34.5"
 	},
 	"devDependencies": {
